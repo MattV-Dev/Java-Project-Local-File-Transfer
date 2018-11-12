@@ -12,3 +12,24 @@ To manually open server:
 3. Your server is open for connection.
 
 Working server takes all it's files it uses from transfer in directory "Repository". If no directory called "Repository" is present, please create one and fill it with files you wish to be transferring.
+
+
+Using client.
+
+If a server was correctly set up, you can open the client to download data. In case you have a server open on your device on default port, you can open the client using provided runner:
+1. Double click clientRunner.bat
+2. Your client is ready for work.
+
+If you wish to access the server open on another host or another port, you can open the client manually and connect it:
+1. Open command line in folder containing client.jar
+2. Type "java -jar client.jar <host> <port>", where host is a name of host and port is a number of port, eg. localhost 1234
+3. Your client is ready for work.
+
+The list of available commands is:
+
+open - estabilish connection with the server, unless the connection has already been estabilished; can be used to check if client is connected
+close - close the connection with the server, use \"close\" command to exit the program
+list <word> - request a list of files from the server containing <word> in their name, in order to list all the files use: "list ."
+fetch <name> - request a file to be sent from the server, it will copy the file to the client side; fetch will match a file that contains <name> in it's filename. If more than one file is matched, the user has to specify with a number which file from the provided list should be downloaded.
+help - display list of viable commands with their usage
+
