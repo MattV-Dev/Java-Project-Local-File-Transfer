@@ -1,0 +1,14 @@
+Setting up server.
+
+The application needs a running server to work properly. To open a server on a default port 1234:
+1. Double click serverRunner.bat.
+2. Your server is open for connection.
+
+If an error occurs while opening server, most probable cause is that another application is currently using default port. Suggested solution is closing the application currently occupying the port, or manually open server on other port.
+
+To manually open server:
+1. Open command line in folder containing server.jar
+2. Type "java -jar server.jar <port>", where port is a number of port, eg. 1234
+3. Your server is open for connection.
+
+Working server takes all it's files it uses from transfer in directory "Repository". If no directory called "Repository" is present, please create one and fill it with files you wish to be transferring.
